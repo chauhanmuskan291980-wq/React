@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
   const [Counter , setCounter] = useState(15)
@@ -14,13 +15,10 @@ function App() {
 
   return (
     <>
-      <h1>React Course with hitesh {Counter}</h1>
-      <h2>Counter Value :{Counter}</h2>
-      <button 
-      onClick={addValue}>Add Value</button>
-      <button
-      onClick={removeValue}>Remove Value</button>
-      <p>footer:{Counter}</p>
+      <h1 className='text-3xl bg-green-500 p-3 rounded-md'>Vite with Tailwind</h1>
+      <Card username="Muskan Chauhan" role="Full stack developer"/>
+       <Card username="Bhuvan Chauhan" role="Backend Developer"/>
+       <Card/>
     </>
   )
 }
