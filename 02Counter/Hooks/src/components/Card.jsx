@@ -3,8 +3,6 @@ import React from 'react'
 const Card = ({username="HC",role="SDE"}) => {
   return (
     <div className="max-w-xs mx-auto bg-white rounded-2xl shadow-lg overflow-hidden text-center hover:shadow-2xl transition duration-300">
-      
-      {/* Profile Image */}
       <div className="p-5">
         <img 
           src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d"
